@@ -1,3 +1,5 @@
+import os
+
 from bottle import Bottle, request, redirect, template, response
 
 from pymongo import MongoClient
@@ -6,7 +8,7 @@ from pygecko.crypto_prices import simple_single_price
 
 mongo_routes = Bottle()
 
-client = MongoClient()
+client = MongoClient(os.environ["MONGO_CONNECTION_STRING"])
 db = client.crypto_tracker
 portfolios = db.portfolios
 users = db.users

@@ -1,0 +1,60 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-shrink: 0;
+}
+
+header,
+footer {
+    height: 50px;
+    background-color: darkslategrey;
+    padding-left: 20px;
+    color:rgb(203, 213, 223);
+}
+
+footer {
+    padding-bottom: 5px;
+}
+
+a {
+    color: rgb(203, 213, 223);
+}
+
+aside {
+    width: 10%;
+    background-color: darkslategrey;
+    margin: 10px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+}
+
+.form-row {
+    display: flex;
+    padding: 0.5em;
+    justify-content: flex-end;
+}
+
+.form-row > label {
+    flex: 1;
+}
+
+.form-row > input {
+    flex: 2;
+}
+
+
+

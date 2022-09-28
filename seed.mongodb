@@ -1,0 +1,51 @@
+use("crypto_tracker");
+
+db.users.insertMany([
+    {
+        "username": "john_doe",
+        "password": "john_doe!"
+    },
+    {
+        "username": "jane_doe",
+        "password": "jane_doe!"
+    },
+    {
+        "username": "jack_doe",
+        "password": "jack_doe!"
+    },
+    {
+        "username": "jill_doe",
+        "password": "jill_doe!"
+    }
+]);
+
+db.portfolios.insertMany([
+  {
+    "username": "john_doe",
+    "investments": {
+        "bitcoin": 0.01,
+        "ethereum": 0.1,
+    }
+  },
+  {
+    "username": "jane_doe",
+    "investments": {
+      "ethereum": 0.1,
+      "solana": 1.0
+    }
+  },
+  {
+    "username": "jack_doe",
+    "investments": {
+      "solana": 1.0,
+      "cardano": 20.0
+    }
+  },
+  {
+    "username": "jill_doe",
+    "investments": {
+      "cardano": 20.0,
+      "bitcoin": 0.01
+    }
+  }
+]);

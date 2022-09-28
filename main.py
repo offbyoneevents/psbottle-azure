@@ -9,6 +9,10 @@ main_app = bottle.app()
 def index():
     redirect("/mongo")
 
+@main_app.get("/about")
+def about():
+    return "<h2>About This Site</h2>"
+
 @main_app.route("/static/<filename>")
 @main_app.route("/static/<filename:path>")
 def get_static_file(filename):
